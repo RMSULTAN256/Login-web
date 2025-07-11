@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;1,14..32,300&family=JetBrains+Mono:ital@0;1&family=Knewave&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200;1,300;1,400&display=swap');
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    background: url('https://i.pinimg.com/originals/80/93/eb/8093eb596b38846d47cf30feb907d68f.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    justify-content: center;
+    place-content: center;
+    align-items: center;
+}
+
+.parent-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    width: max-content;
+    height: max-content;
+
+    backdrop-filter: blur(5px);
+
+    border-radius: 2rem;
+    box-shadow: 2px 4px 10px grey;
+}
+
+.login-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+
+    justify-content: center;
+    align-items: center;
+    place-content: center ;
+
+    transition: all 1s ease-in-out;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+
+    width: 500px;
+    height: 350px;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 40px;
+    transition: all 2s ease-in-out;
+
+}
+
+.titles {
+    position: relative;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+
+    color: white;
+
+    padding: 0;
+    margin: 0;
+}
+
+.regis-container .titles {
+    top: 30px;
+}
+
+label {
+    position: absolute;
+    left: 6rem;
+    top: 8.3rem;
+    font-size: 18px;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
+    opacity: 40%;
+
+}
+
+.input-group {
+    width: max-content;
+    height: max-content0;
+    margin-left: 20px;
+
+}
+
+.input-group .icon-user {
+    position: relative;
+    align-items: center;
+    right: 25px;
+    top: 40%;
+    transform: translateY(-50%);
+    color: rgb(255, 254, 254);
+
+    filter:opacity(90%);
+}
+
+.regis-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+
+    justify-content: center;
+    align-items: center;
+    place-content: center ;
+    transition: all 2s ease-in-out;
+
+}
+
+.regis {
+    display: flex;
+    flex-direction: column;
+
+    width: 500px;
+    height: 400px;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 40px;
+
+    padding-top: 25px;
+    transition: all 2s ease-in-out;
+
+}
+
+.placeholder {
+    background: transparent;
+
+    height: 3rem;
+    width: 20rem;
+
+    padding: 2px 10px;
+    padding-right: 30px;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    opacity: 1;
+
+    font-size: 16px;
+    color: white;
+
+    cursor: text;
+    transition: all 2s ease-in-out;
+}
+
+input:focus {
+    border-width: 3px;
+}
+
+input::placeholder {
+    color: white;
+    opacity: 50%;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+  -webkit-text-fill-color: #fff !important; /* or your input text color */
+  background-color: transparent !important;
+  transition: background-color 9999s ease-in-out 0s;
+}
+
+
+.login-container .btn-sh {
+    width: 350px;
+    height: 2rem;
+    margin-bottom: 25px;
+    border-radius: 20px;
+}
+
+.regis-container .btn-sh {
+    width: 350px;
+    height: 2rem;
+    margin-bottom: 25px;
+    border-radius: 20px;
+}
+
+.flipped {
+    background-color: blue;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.registering, .loginin {
+    margin: 0;
+    margin-bottom: 20px;
+
+    align-items: center;
+    justify-content: center;
+
+    user-select: none;
+    color:white;
+
+}
+
+.registering a {
+    cursor: pointer;
+    color: rgb(245, 9, 56);
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+
+.loginin a {
+    cursor: pointer;
+    color: rgb(245, 9, 56);
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+
+a:hover {
+    color: rgb(141, 188, 241);
+    transition: 0.5s ease-in-out;
+}
+.hidden {
+    opacity: 0;
+    transition: all 3s ease-in-out;
+    transform: translateX(-30px);
+    pointer-events: none;
+}
