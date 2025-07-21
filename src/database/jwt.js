@@ -4,7 +4,7 @@ const user = {
     id: 123,
     username: 'john'
 };
-const secret = 'linggangnigga';
+const secret = '';
 const token = jwt.sign(user, secret, {expiresIn: '1h'});
 
 res.json({token});
