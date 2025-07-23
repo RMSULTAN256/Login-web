@@ -1,4 +1,4 @@
-import { body, validationResult } from 'express-validator';
+import { body } from 'express-validator';
 import express from 'express';
 import bcrypt from 'bcrypt';
 import mysql from 'mysql';

@@ -1,0 +1,23 @@
+.parent-container-home {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+.parent-container-home .container-home {
+    
+    display: flex;
+    flex-direction: column;
+
+    width: max-content;
+    height: max-content;
+    padding: 20px;
+    border-radius: 20px;
+
+    background-color: antiquewhite;
+
+    align-items: center;
+    justify-content: center;
+}

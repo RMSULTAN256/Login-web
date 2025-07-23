@@ -1,17 +1,12 @@
-import express from 'express';
-import { body, validationResult } from 'express-validator';
-import cors from 'cors';
 import mysql from 'mysql';
-import helmet from 'helmet';
 
-const app = express();
-app.use(cors());
-app.use(express.json());
-app.use(helmet());
-app.use(helmet.xssFilter());
+const db = mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password: '',
+});
 
-app.get('/page', (req, res) => {
-    const userInput = req.body.input;
-    const sanitizedInput = sanitize(userInput);
-
+db.connect((err) => {
+    if (err) throw err;
+    console.log('Database create')
 })
