@@ -41,9 +41,4 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run semgrep
-        run: semgrep --config pyth --error --strict --json --output semgrep-results.json
-
-      - name: Upload semgrep results
-        uses: actions/upload-artifact@v4
-        with:
-          name: semgrep-results.json
+        run: semgrep ci
