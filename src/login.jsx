@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { FaUser, FaLock, FaPassport } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import { Button, CarouselCaption, Form } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 
 import './RS.css';
 
@@ -21,7 +21,7 @@ function Login() {
         setSubmit(true);
 
         if (!username || !password) {
-            alert('Please wok put your username, Im not stupid');
+            alert('Please wok put your username or password, Im not stupid');
             setSubmit(false);
             return;
         };
@@ -186,6 +186,7 @@ function Login() {
                             type='password'
                             className='placeholder'
                             placeholder='Password'
+                            autoComplete='off'
                             id="password"
                             value={password}
                             onChange={e => setPassword(e.target.value)}

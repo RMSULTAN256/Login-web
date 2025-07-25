@@ -3,7 +3,7 @@ import { verifyToken } from './verify.js';
 
 const router = express.Router();
 
-router.get('/dashboard', verifyToken, (req, res) => {
+router.get('/', verifyToken, (req, res) => {
     res.json({ message: `Welcome to dashboard, ${req.user.username}`});
 });
 

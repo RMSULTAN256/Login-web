@@ -25,7 +25,6 @@ router.post('/', [
 ],(req, res) => {
     try {
         const { username, password } = req.body;
-        console.log(req.body)
         const sql = 'SELECT * FROM users WHERE username = ?';
 
         db.query(sql, [username], async (err, result) => {
@@ -43,7 +42,7 @@ router.post('/', [
             res.status(401).json({ message: 'Login Failed. Invalid username or password'})
             return;
         };
-        const secret = "niggahitam256";
+        const secret = "expertshash";
 
         const users = { username: user.username };
         const token = jwt.sign(users, secret, { expiresIn: '1h'});

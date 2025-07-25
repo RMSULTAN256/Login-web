@@ -1,6 +1,6 @@
 import jwt from 'jsonwebtoken';
 
-const secret = 'mystrong256';
+const secret = 'expertshash';
 
 export function verifyToken(req, res, next) {
     const verifyHeader = req.headers['authorization']

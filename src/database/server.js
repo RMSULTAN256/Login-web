@@ -11,6 +11,6 @@ app.use(express.json());
 
 app.use('/api/login', loginRoutes);
 app.use('/api/register', regisRoutes);
-app.use('/dashboard', dashboardRoute);
+app.use('/api/dashboard', dashboardRoute);
 
 app.listen(5000, () => console.log('Server online'));

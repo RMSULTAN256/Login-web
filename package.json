@@ -6,6 +6,7 @@
   "proxy": "http://localhost:5002",
   "scripts": {
     "dev": "vite",
+    "sql": "node ./src/database/server.js",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
