@@ -40,9 +40,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Install semgrep
-        run: pip install semgrep
-
       - name: Login to semgrep
         run: semgrep login --api-key ${{ secrets.SEMGREP_TOKEN_API }}
 
