@@ -41,7 +41,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Login to semgrep
-        run: semgrep login --api-key ${{ secrets.SEMGREP_TOKEN_API }}
+        run: semgrep login ${{ secrets.SEMGREP_TOKEN_API }}
 
       - name: Run semgrep
         run: semgrep ci
